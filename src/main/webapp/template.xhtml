@@ -6,9 +6,11 @@
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
         <title>Facelet Title</title>
+        <h:outputStylesheet library="css" name="estudo.css"></h:outputStylesheet>
     </h:head>
     <h:body>
-        <img src=""></img>
+        <img src="#{resource['imagens/logo.png']}"></img>
+        <h:graphicImage library="imagens" name="logo.png"></h:graphicImage>
         <h:form>
             <p:menubar>
                 <p:menuitem value="Início" url="index.xhtml"></p:menuitem>
@@ -22,6 +24,8 @@
         <ui:insert></ui:insert>
         <p:separator></p:separator>
         <h3>Rodapé</h3>
+        <h:outputScript library="primefaces" name="jquery/jquery.js"></h:outputScript>
+        <h:outputScript library="js" name="estudo.js"></h:outputScript>
     </h:body>
 </html>
 
